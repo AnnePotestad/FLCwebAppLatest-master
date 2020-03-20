@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>  
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style1.css"/>
      <script src="js/jquery.min.js"></script>
 </head>
 <body> 
@@ -23,11 +23,13 @@
     </button>
     <div class="navbar-collapse collapse" id="navbarCustom">
             <ul class="navbar-nav ml-auto" >
-	          <li class="nav-item"><a href="Mainpage.aspx" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.aspx" class="nav-link">About us</a></li>
+	          <li class="nav-item active"><a href="Mainpage.aspx" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="About.aspx" class="nav-link">About us</a></li>
 	          <li class="nav-item"><a href="home.aspx" class="nav-link">Products</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
-	        </ul>
+	          <li class="nav-item"><a href="Contact.aspx" class="nav-link">Contact us</a></li>
+              <asp:ImageButton ID="user" ImageUrl="images/user.png" runat="server" CssClass="icon" />
+              <asp:Label ID="Label2" runat="server" Text="Client" CssClass="client"></asp:Label>
+           </ul>
     </div>
 	  </nav>
 
@@ -53,13 +55,7 @@
             <p><a href="#" class="btn btn-primary">Shop Now</a></p>
             </div>
         </div>
-        <!--<div class="carousel-item">
-            <img src="images/slide1_1.png"  alt="Third Slide"/>
-            <div class="carousel-caption d-none d-lg-block">
-                <h2>First slide label</h2>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-        </div>-->
+   
     </div>
     <!-- Carousel controls -->
     <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
@@ -80,7 +76,7 @@
         <div class="row mb-6">
           <div class="col-md-6">
              <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-4">Help</h2>
+              <h6 class="ftco-heading-4">Help</h6>
               <div class="d-flex">
 	              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
 	                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
@@ -93,13 +89,15 @@
           </div>
           <div class="col-md-6">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-4">Have a Questions?</h2>
+            	<h6 class="ftco-heading-4">Have a Questions?</h6>
             	<div class="d-flex">
 	              <ul>
 	                <li><span class="text">21 Zabarte Ext, Novaliches, Quezon City, 1124 Metro Manila</span></li>
 	                <li><a href="#"><span class="text">+2 392 3929 210</span></a></li>
 	                <li><a href="#"><span class="text">fervarledesma@gmail.com</span></a></li>
-	              </ul>
+           
+                      </ul>
+
 	            </div>
             </div>
           </div>

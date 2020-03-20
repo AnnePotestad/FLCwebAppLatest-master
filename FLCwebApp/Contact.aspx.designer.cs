@@ -11,7 +11,7 @@ namespace FLCwebApp
 {
 
 
-    public partial class home_final
+    public partial class Contact
     {
 
         /// <summary>
